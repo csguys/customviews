@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvNameTagCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:text="P"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvSubjectCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Paytm"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvHeadCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Your Recharge of airtel is successfull"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvContentCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Transaction id 21HJABD455DA7 on your mail"/>
+
+    <TextView
+        android:id="@+id/mail_dateCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13 Dec"
+        android:textColor="#3e71df"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/ivStarredCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/btn_star"/>
+</merge>
