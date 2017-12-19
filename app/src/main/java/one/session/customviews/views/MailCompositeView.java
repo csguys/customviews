@@ -29,8 +29,10 @@ public class MailCompositeView extends RelativeLayout {
 
     public MailCompositeView(final Context context, final AttributeSet attrs, final int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        // inflate the layout for this ViewGroup
         View view = inflate(context, R.layout.view_mail_composite, this);
-//        View view = LayoutInflater.from(context).inflate(R.layout.view_mail_composite, this, true);
+
+        //------------- get Views from group----
         tvNameTag = view.findViewById(R.id.tvNameTag);
         tvSubject = view.findViewById(R.id.tvSubject);
         tvHead = view.findViewById(R.id.tvHead);
@@ -39,8 +41,11 @@ public class MailCompositeView extends RelativeLayout {
         ivStar = view.findViewById(R.id.ivStarred);
     }
 
-    @Override
-    protected void measureChildWithMargins(final View child, final int parentWidthMeasureSpec, final int widthUsed, final int parentHeightMeasureSpec, final int heightUsed) {
-        super.measureChildWithMargins(child, parentWidthMeasureSpec, widthUsed, parentHeightMeasureSpec, heightUsed);
+    /**
+     * Update View Data with view Model object
+     * @param dataObject
+     */
+    public void updateViewDate(final Object dataObject) {
+         //update fields of view
     }
 }

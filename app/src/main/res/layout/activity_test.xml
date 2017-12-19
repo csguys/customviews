@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="one.session.customviews.TestActivity">
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<one.session.customviews.views.TempView-->
+            <!--android:background="@color/colorAccent"-->
+            <!--android:tag="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"/>-->
+        <!--<one.session.customviews.views.TempView-->
+            <!--android:background="@color/colorPrimaryDark"-->
+            <!--android:tag="2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"/>-->
+        <!--<one.session.customviews.views.TempView-->
+            <!--android:tag="3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"/>-->
+        <!--<one.session.customviews.views.TempView-->
+            <!--android:tag="4"-->
+
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"/>-->
+    <!--</LinearLayout>-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <one.session.customviews.views.TempView
+            android:id="@+id/a"
+            android:tag="a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <one.session.customviews.views.TempView
+            android:layout_below="@+id/a"
+            android:tag="b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>
