@@ -9,14 +9,29 @@
     android:orientation="vertical"
     tools:context="one.session.customviews.MainActivity">
     <one.session.customviews.views.MailCompositeView
-        android:id="@+id/abcd"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/compund_view"
         android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <one.session.customviews.views.MailCustomCompositeView
-        android:layout_below="@+id/abcd"
+        android:id="@+id/custom_compound_view"
+        android:layout_below="@+id/compund_view"
         android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="80dp"/>
-
+    <one.session.customviews.views.CircleView
+        android:id="@+id/custom_view"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/custom_compound_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <Button
+        android:text="Next"
+        android:layout_centerHorizontal="true"
+        android:onClick="animationActivity"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>

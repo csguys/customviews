@@ -6,6 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="one.session.customviews.AnimationActivity">
+    <Button
+        android:text="Back"
+        android:onClick="goBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="Reset"
+        android:layout_alignParentEnd="true"
+        android:onClick="reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
     <View
         android:id="@+id/view_to_animate"
         android:layout_centerInParent="true"
@@ -18,20 +29,20 @@
         android:weightSum="4"
         android:layout_height="wrap_content">
         <Button
-            android:text="X"
-            android:onClick="xAnim"
+            android:text="V-A"
+            android:onClick="valueAnimation"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"/>
         <Button
-            android:text="Y"
-            android:onClick="yAnim"
+            android:text="O-A"
+            android:onClick="objectAnimator"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"/>
         <Button
-            android:text="Rotate"
-            android:onClick="rAnim"
+            android:text="V-P-A"
+            android:onClick="valuePropertyAnimator"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"/>
